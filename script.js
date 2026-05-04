@@ -87,7 +87,7 @@ function simulate(city,roofArea,tankCap,rc){
   });
 }
 function findOptimal(city,roofArea,rc){
-  const sizes=[500,1000,2000,3000,5000,8000,10000,15000,20000,50000];
+  const sizes=[500,1000,2000,3000,5000,8000,10000,15000,20000,50000,75000,100000,125000,150000,175000,200000,225000,250000,275000,300000,325000,350000,375000,400000,425000,450000,475000,500000];
   let best=null,bestScore=Infinity;
   sizes.forEach(sz=>{
     const r=simulate(city,roofArea,sz,rc);
